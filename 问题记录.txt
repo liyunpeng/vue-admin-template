@@ -32,3 +32,19 @@ error: Parsing error: Adjacent JSX elements must be wrapped in an enclosing tag 
 },
 
 -----------------
+3. 之前能编译通过，界面正常显示， 没有该代码， git diff没有差别，
+Failed to compile.
+
+./src/components/Index.vue
+Module Error (from ./node_modules/eslint-loader/index.js):
+error: Parsing error: Unexpected token ! at src/components/Index.vue:3:10:
+  1 | <template>
+  2 |     <div class="index-vue">
+> 3 |         <!-- 侧边栏 -->
+    |          ^
+  4 |         <aside :class="asideClassName">
+  5 |             <!-- logo -->
+  6 |             <div class="logo-c">
+
+
+1 error found.
